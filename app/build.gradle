@@ -66,6 +66,10 @@ model {
 //            signingConfigs = signingConfigs.release
         }
     }
+    
+    lintOptions {
+        abortOnError false
+    }
 }
 
 task buildNative(type: Exec, description: 'Compile JNI source via NDK') {
